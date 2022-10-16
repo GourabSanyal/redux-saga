@@ -23,6 +23,6 @@ switch ( action.type ){
         return [...data]
 
     default:
-        return [];
+        return data;
     }
 };
