@@ -1,4 +1,4 @@
-import { PRODUCT_LIST } from "./constants";
+import { PRODUCT_LIST, SET_PRODUCT_LIST } from "./constants";
 
 export const productData = (data = [], action) => {
 //   if ( action.type === ADD_TO_CART ) {
@@ -8,9 +8,10 @@ export const productData = (data = [], action) => {
 //     return "nothing is called";
 //   }
 switch ( action.type ){
-    case PRODUCT_LIST:
-        console.log('PRODUCT_LIST reducer', action)
-        return [action.data]
+        
+    case SET_PRODUCT_LIST:
+        console.log('SET_PRODUCT_LIST reducer', action)
+        return [...action.data]
         
    
 

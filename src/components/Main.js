@@ -6,7 +6,7 @@ function Main() {
 
   const dispatch = useDispatch()
   const data = useSelector((state) => state.productList)
-  console.log('data from main compoment ', data);
+  console.log('data from main compoment from saga', data);
 
   const product = {
     name : 'iPhone 13',
